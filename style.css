@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+  body{
+  	  margin: 0;
+  	      background-image: url(Media/slayyer1.png);
+
+  }
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-color: #C3D1C5;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 200px;
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px #547259);
+}
+
+.navbar ul li {
+  list-style: none;
+  margin: 0 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.navbar ul li a::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  background: #547259;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+.navbar ul {
+  box-shadow: 0 0 10px 0 #547259;
+  border-radius: 25px;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.content {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  color: #fff;
+  top: 50% !important;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 400px !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(Media/bfadb9133209576d60d142408f7f53f5.jpg);
+	  filter: drop-shadow(0 0 5px #547259);
+
+
+}
+
+.content h1 {
+  font-size: 70px;
+font-family: 'Caveat', cursive;
+  margin-top: 80px;
+}
+
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px !important;
+  font-weight: bold;
+  border: 2px solid #547259;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+span {
+  background: #547259;
+  width: 0%;
+  height: 100%;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  border: none;
+}
+.small-container {
+        width: 100vw; /* Set the width to 100vw to cover the viewport width */       
+         margin: auto;
+        margin-top: -170px;     }
+
+    .col-4 {
+        flex-basis: 25%;
+        padding: 10px;
+        min-width: 200px;
+        margin-bottom: 50px;
+        transition: transform 0.5s;
+        background-color: #c3d1c5;
+		filter: drop-shadow(0 0 5px #547259);
+
+    }
+    .col-4:hover {
+    transform: scale(1.1); /* Apply the hover effect for the transition */
+}
+
+    .small-container .row {
+        background-color: #c3d1c5;
+        margin: 0;
+        width: 70%;
+    }
+    .small-container a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.small-container a:hover {
+    color: #547259;
+}
+
+.small-container span {
+    margin: 0 5px;
+    color: #999;
+}
+
+  
+@media (max-width: 768px) {
+  .categories {
+    margin: 0;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .col-md-3 {
+    margin: 0 0 20px 0;
+  }
+  .small-container
+  {
+	background-color: #c3d1c5;
+
+  }
+}
+ .title {
+        text-align: center;
+        margin: 0 auto 80px;
+        position: relative;
+        line-height: 60px;
+		filter: drop-shadow(0 0 5px #547259);
+
+    }
+
+    .title::after {
+        content: '';
+        background: #547259;
+        width: 80px;
+        height: 5px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+.footer {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.8);
+    padding: 40px 40px; /* Add some padding for spacing */
+  background-color:#547259;
+
+}
+
+.slay{
+    background-color: #C3D1C5 !important;
+    color:  #547259;
+
+}
+.footer .col-md-4 a i {
+    color: #C3D1C5; /* Replace with your desired color */
+}
+.footer h3{
+color: #fff;}
